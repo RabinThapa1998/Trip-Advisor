@@ -28,7 +28,7 @@ export default function Home() {
       <Container maxWidth='lg' sx={{ mt: 5 }}>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} className='belownav'>
 
-          
+
           <Button variant='outlined' size="large" color={'primary'} sx={{
             ':hover': {
               bgcolor: '#000',
@@ -37,7 +37,7 @@ export default function Home() {
             height: '70px'
           }}
             endIcon={<BedIcon></BedIcon>}
-          className="belownavitems">
+            className="belownavitems">
             <Typography sx={{ fontWeight: 700 }}>Hotels </Typography>
           </Button>
 
@@ -88,8 +88,8 @@ export default function Home() {
 
           <Image src='/wallpaper1.jpg' alt='wallpaper1' layout='fill' objectFit="cover" />
 
-          <Paper component="form" elevation={1}  
-            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', flexDirection: 'row', position: 'relative', top: '50%' , left: '50%' }} className={styles.searchbar}>
+          <Paper component="form" elevation={1}
+            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', flexDirection: 'row', position: 'relative', top: '50%', left: '50%' }} className={styles.searchbar}>
             <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
               <SearchIcon />
             </IconButton>
@@ -387,16 +387,16 @@ export default function Home() {
       </Container>
       <Box sx={{ mt: 5, bgcolor: '#FBF0ED', pb: 3, pt: 3 }} >
         <Container maxWidth='lg'>
-          <Stack direction={'row'} sx={{ justifyContent: 'space-between' }}>
+          <Stack direction={{ md: 'row', xs: 'column' }} sx={{ justifyContent: 'space-between' }}>
 
             <Stack direction={'column'} spacing={2}>
-              <Stack direction={'row'} spacing={5}>
+              <Stack direction={{ md: 'row', xs: 'column' }} spacing={5}>
                 <Stack direction={'column'}>
                   <Typography variant={'body1'} sx={{ fontWeight: '400', color: 'text.secondary' }}>About Tripadvisor
                   </Typography>
                   {data.abouttripadvisor.map(eachdata => {
                     return (
-                      <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary' ,fontSize:'0.90rem'}}>{eachdata}
+                      <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary', fontSize: '0.90rem' }}>{eachdata}
                       </Typography>
                     )
                   })}
@@ -406,7 +406,7 @@ export default function Home() {
                   </Typography>
                   {data.explore.map(eachdata => {
                     return (
-                      <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary' ,fontSize:'0.90rem'}}>{eachdata}
+                      <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary', fontSize: '0.90rem' }}>{eachdata}
                       </Typography>
                     )
                   })}
@@ -416,48 +416,50 @@ export default function Home() {
                   </Typography>
                   {data.dobusiness.map(eachdata => {
                     return (
-                      <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary',fontSize:'0.90rem' }}>{eachdata}
+                      <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary', fontSize: '0.90rem' }}>{eachdata}
                       </Typography>
                     )
                   })}
                   <Box sx={{ mt: 3 }}>
                     <Typography variant={'body1'} sx={{ fontWeight: '400', color: 'text.secondary' }}>Get The App
                     </Typography>
-                    <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary',fontSize:'0.90rem' }}>iPhone App
+                    <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary', fontSize: '0.90rem' }}>iPhone App
                     </Typography>
-                    <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary' ,fontSize:'0.90rem'}}>Android App
+                    <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary', fontSize: '0.90rem' }}>Android App
                     </Typography>
                   </Box>
                 </Stack>
               </Stack>
-              <Stack direction={'row'} spacing={2}>
-                <Stack>
-                  <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="logo" height={'40'} width={'40'} />
-                </Stack>
-                <Stack direction={'column'}>
-                  <Typography variant={'body1'} sx={{ fontWeight: '400', color: 'text.primary', fontSize: '0.8rem' }}> &#169;2022 TripAdvisor LLC All rights reserved.</Typography>
-                  <Stack direction={'row'} spacing={1}>
+              <Stack direction={'column'} spacing={2}>
+                <Stack direction={'row'} spacing={2}>
+                  <Stack>
+                    <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="logo" height={'40'} width={'40'} />
+                  </Stack>
+                  <Stack direction={'column'}>
+                    <Typography variant={'body1'} sx={{ fontWeight: '400', color: 'text.primary', fontSize: '0.8rem' }}> &#169;2022 TripAdvisor LLC All rights reserved.</Typography>
+                    <Stack direction={'row'} spacing={1}>
 
-                    {data.terms.map(eachdata => {
-                      return (
-                        <a href="#" style={{ color: 'black' }}>
-                          <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary', fontSize: '0.9rem' }}>{eachdata}
-                          </Typography>
-                        </a>
-                      )
-                    })}
+                      {data.terms.map(eachdata => {
+                        return (
+                          <a href="#" style={{ color: 'black' }}>
+                            <Typography variant={'body1'} sx={{ fontWeight: '700', color: 'text.primary', fontSize: '0.9rem' }}>{eachdata}
+                            </Typography>
+                          </a>
+                        )
+                      })}
+                    </Stack>
                   </Stack>
                 </Stack>
+                <Typography varinat={'body1'} sx={{ fontSize: '0.8rem', fontWeight: '400' }}>
+                  This is the version of our website addressed to speakers of English in the United States. If you are a resident of another <br /> country or region,  please select the appropriate version of Tripadvisor for your country or region in the drop-down menu. more
+                </Typography>
               </Stack>
-              <Typography varinat={'body1'} sx={{fontSize:'0.8rem', fontWeight:'400'}}>
-              This is the version of our website addressed to speakers of English in the United States. If you are a resident of another <br /> country or region,  please select the appropriate version of Tripadvisor for your country or region in the drop-down menu. more
-              </Typography>
             </Stack>
 
-            <Stack direction={'column'}>
+            <Stack direction={'column'} className='tripadvisorsites'>
               {data.tripadvisorsites.map(eachdata => {
                 return (
-                  <Typography variant={'body1'} sx={{ fontWeight: '400', color: 'text.primary' ,fontSize:'0.90rem'}}>{eachdata}
+                  <Typography variant={'body1'} sx={{ fontWeight: '400', color: 'text.primary', fontSize: '0.90rem' }}>{eachdata}
                   </Typography>
                 )
               })}
