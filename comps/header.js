@@ -10,7 +10,7 @@ const Header = () => {
             <Typography variant='h5' sx={{ fontWeight: 900,fontSize:'1.8rem' }}>Trip advisor</Typography>
           </Stack>
 
-          <Stack direction='row' spacing={2}>
+          <Stack direction='row' spacing={2} className='navbar'>
             <Typography variant='h6' sx={{ fontWeight: 700 }}>Review</Typography>
             <Typography variant='h6' sx={{ fontWeight: 700 }}>Trips</Typography>
             <Typography variant='h6' sx={{ fontWeight: 700 }}>Alerts</Typography>

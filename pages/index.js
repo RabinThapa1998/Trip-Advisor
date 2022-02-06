@@ -26,7 +26,9 @@ export default function Home() {
       </Head>
 
       <Container maxWidth='lg' sx={{ mt: 5 }}>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} className='belownav'>
+
+          
           <Button variant='outlined' size="large" color={'primary'} sx={{
             ':hover': {
               bgcolor: '#000',
@@ -35,7 +37,7 @@ export default function Home() {
             height: '70px'
           }}
             endIcon={<BedIcon></BedIcon>}
-          >
+          className="belownavitems">
             <Typography sx={{ fontWeight: 700 }}>Hotels </Typography>
           </Button>
 
@@ -46,7 +48,7 @@ export default function Home() {
             },
             height: '70px'
           }}
-            endIcon={<HomeIcon></HomeIcon>}> <Typography sx={{ fontWeight: 700 }}>Vacation Rentals</Typography>
+            endIcon={<HomeIcon></HomeIcon>} className="belownavitems"> <Typography sx={{ fontWeight: 700 }}>Vacation Rentals</Typography>
           </Button>
 
           <Button variant='outlined' sx={{
@@ -56,7 +58,7 @@ export default function Home() {
             },
             height: '70px'
           }}
-            endIcon={<ConfirmationNumberIcon></ConfirmationNumberIcon>}> <Typography sx={{ fontWeight: 700 }}>Things to Do</Typography> </Button>
+            endIcon={<ConfirmationNumberIcon></ConfirmationNumberIcon>} className="belownavitems"> <Typography sx={{ fontWeight: 700 }}>Things to Do</Typography> </Button>
           <Button variant='outlined' sx={{
             ':hover': {
               bgcolor: '#000',
@@ -64,7 +66,7 @@ export default function Home() {
             },
             height: '70px'
           }}
-            endIcon={<RestaurantIcon></RestaurantIcon>}> <Typography sx={{ fontWeight: 700 }}>Restaurants</Typography> </Button>
+            endIcon={<RestaurantIcon></RestaurantIcon>} className="belownavitems"> <Typography sx={{ fontWeight: 700 }}>Restaurants</Typography> </Button>
           <Button variant='outlined' sx={{
             ':hover': {
               bgcolor: '#000',
@@ -72,7 +74,7 @@ export default function Home() {
             },
             height: '70px'
           }}
-            endIcon={<ForumIcon></ForumIcon>}> <Typography sx={{ fontWeight: 700 }}>Travel Forums</Typography></Button>
+            endIcon={<ForumIcon></ForumIcon>} className="belownavitems"> <Typography sx={{ fontWeight: 700 }}>Travel Forums</Typography></Button>
           <Button variant='outlined' sx={{
             ':hover': {
               bgcolor: '#000',
@@ -80,14 +82,14 @@ export default function Home() {
             },
             height: '70px'
           }}
-            endIcon={<MoreHorizIcon></MoreHorizIcon>}> <Typography sx={{ fontWeight: 700 }}>More</Typography></Button>
+            endIcon={<MoreHorizIcon></MoreHorizIcon>} className="belownavitems"> <Typography sx={{ fontWeight: 700 }}>More</Typography></Button>
         </Box>
         <Box sx={{ height: 350, width: 'auto', position: 'relative', mt: 3 }} >
 
-          <Image src='/wallpaper1.jpg' alt='wallpaper1' width={4000} height={3000} layout='fill' objectFit="cover" />
+          <Image src='/wallpaper1.jpg' alt='wallpaper1' layout='fill' objectFit="cover" />
 
-          <Paper component="form" elevation={1}
-            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 600, flexDirection: 'row', position: 'relative', top: '50%', left: '50%' }} className={styles.searchbar}>
+          <Paper component="form" elevation={1}  
+            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', flexDirection: 'row', position: 'relative', top: '50%' , left: '50%' }} className={styles.searchbar}>
             <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
               <SearchIcon />
             </IconButton>

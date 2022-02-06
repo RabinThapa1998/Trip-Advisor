@@ -1,7 +1,23 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .imagedim{
     filter: brightness(70%);
+}
+.belownav{
+    overflow-x: auto !important;
+}
+.belownavitems{
+    flex-shrink: 0 !important;
+    margin: 0 10px !important ;
+}
+
+@media (max-width:768px){
+    .navbar{
+        display: none !important;
+        }
+
 }
