@@ -429,7 +429,19 @@ export default function Home() {
                     </Typography>
                   </Box>
                 </Stack>
+                <Stack direction={'column'} className='tripadvisorsites'>
+                  <Typography variant={'body1'} sx={{ fontWeight: '400', color: 'text.secondary' }}>Tripadvisor Sites
+                  </Typography>
+                  {data.tripadvisorsites.map(eachdata => {
+                    return (
+                      <Typography variant={'body1'} sx={{ fontWeight: '400', color: 'text.primary', fontSize: '0.90rem' }}>{eachdata}
+                      </Typography>
+                    )
+                  })}
+
+                </Stack>
               </Stack>
+
               <Stack direction={'column'} spacing={2}>
                 <Stack direction={'row'} spacing={2}>
                   <Stack>
@@ -456,15 +468,7 @@ export default function Home() {
               </Stack>
             </Stack>
 
-            <Stack direction={'column'} className='tripadvisorsites'>
-              {data.tripadvisorsites.map(eachdata => {
-                return (
-                  <Typography variant={'body1'} sx={{ fontWeight: '400', color: 'text.primary', fontSize: '0.90rem' }}>{eachdata}
-                  </Typography>
-                )
-              })}
 
-            </Stack>
           </Stack>
 
 
