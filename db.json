@@ -1,0 +1,76 @@
+{
+    "tophotels": [
+        "Las Vegas Hotels",
+        "Destin Hotels",
+        "Myrtle Beach Hotels",
+        "Gatlinburg Hotels",
+        "Walt Disney World Hotels",
+        "Orlando Hotels",
+        "Ocean City Hotels",
+        "Panama City Beach Hotels",
+        "Branson Hotels",
+        "Seattle Hotels",
+        "Turks and Caicos Hotels",
+        "Mazatlan Hotels",
+        "Amalfi Coast Hotels",
+        "Miami Beach Hotels",
+        "Fort Lauderdale Hotels",
+        "South Padre Island Hotels",
+        "Jackson Hotels",
+        "Yosemite National Park Hotels",
+        "South Lake Tahoe Hotels"
+    ],
+    "topthings": [
+        "Bungee",
+        "Hiking",
+        "trekking",
+        "Paragliding",
+        "Jungle Safari",
+        "Mountaineering"
+    ],
+    "abouttripadvisor": [
+        "About Us",
+        "Press",
+        "Resources and Policies",
+        "Careers",
+        "Investor Relations",
+        "Trust & Safety"
+    ],
+    "explore":[
+        "Write a review",
+        "Add a Place",
+        "Join ",
+        "Travelers' Choice",
+        "Insurance",
+        "GreenLeaders",
+        "Blog",
+        "Help Center",
+        "Tripadvisor Plus",
+        "Travel Articles"
+    ],
+    "dobusiness":[
+        "Owners",
+        "Business Advantage",
+        "Sponsored Placements",
+        "Advertise with Us",
+        "Become an Affiliate"
+    ],
+    "tripadvisorsites":[
+        "Discover your dream destination with Jetsetter",
+        "Book the best restaurants with TheFork",
+        "Book tours and attraction tickets on Viator",
+        "Read cruise reviews on Cruise Critic",
+        "Get airline seating charts on Seat Guru",
+        "Find vacation rentals on FlipKey",
+        "Search for holiday rentals on Holiday Lettings",
+        "Find a vacation home on Vacation Home Rentals",
+        "Plan and book your next trip with Reco Trip Designers"
+    ],
+    "terms":[
+        "Terms of Use",
+        "Privacy and Cookies Statement",
+        "Cookie consent",
+        "Site Map",
+        "How the site works"
+    ]
+}
